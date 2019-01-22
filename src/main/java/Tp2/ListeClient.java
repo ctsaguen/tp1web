@@ -60,6 +60,7 @@ public class ListeClient extends HttpServlet {
                 out.println("<tr>");
     out.println("<th>nom</th>");
     out.println("<th>addresse</th>");
+    out.println("<th>/</th>");
   out.println("</tr>");
   out.println("</thead>");
   out.println("<tbody>");
@@ -67,6 +68,7 @@ public class ListeClient extends HttpServlet {
       out.println("<tr>");
       out.println("<td>"+customer.getName()+"</td>");
       out.println("<td>"+customer.getAddressLine1()+"</td>");
+      out.println("<td><a href=\"/mavenproject1/ProprieteClient?customerID="+customer.getCustomerId()+"\" class=\"btn btn-warning\">Détail</a></td>");
       out.println("</tr>");
   }
 out.println("<tbody>");

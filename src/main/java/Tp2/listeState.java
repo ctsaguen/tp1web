@@ -55,7 +55,7 @@ public class listeState extends HttpServlet {
             out.println(sat);
              out.println("</option>");
              }
-            out.println("<select>");
+            out.println("</select>");
             out.println("<input type=\"submit\" class =\"btn btn-primary col-sm-6 btn-sm\" value=\"Valider\">");
             out.println("</form>");
            out.printf("<hr><a href='%s' class=\"btn btn-info\">Retour au menu</a>", request.getContextPath());
